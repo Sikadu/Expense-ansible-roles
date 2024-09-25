@@ -1,9 +1,9 @@
 ---
 - name: install dependencies
   ansible.builtin.pip:
-   name:
-   - PyMySQL
-  executable: pip3.9
+    name:
+    - PyMySQL
+    executable: pip3.9
 
 - name: install mysql
   ansible.builtin.package:
@@ -15,7 +15,7 @@
   ansible.builtin.service:
     name: mysqld
     state: started
-  enabled: yes   
+    enabled: yes   
 
 - name: connect mysql server
   community.mysql.mysql_info:
