@@ -1,4 +1,4 @@
-- name: install dependencies
+- name: install python dependencies
   ansible.builtin.pip:
     name:
     - PyMySQL
